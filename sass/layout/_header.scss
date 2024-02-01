@@ -5,7 +5,7 @@
       rgba($color-primary, 0.2),
       rgba($color-secondary, 0.2)
     ),
-    url('/imgs/hero-background.jpg');
+    url('../imgs/hero-background.jpg');
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  padding: 30px; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #777; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.7;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3.5rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1.47rem;
+    font-weight: 700; }
+
+.-u-center-text {
+  text-align: center; }
+
+.-u-center-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(rgba(2, 132, 199, 0.2), rgba(7, 89, 133, 0.2)), url("/imgs/hero-background.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header__logo {
+    height: 3.5rem;
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s; }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }

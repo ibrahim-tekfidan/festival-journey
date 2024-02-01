@@ -242,8 +242,15 @@ body {
 .feature-card {
   padding: 3.2rem 2.4rem;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 3px; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  transition: all 0.3s; }
   .feature-card__icon {
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 4.8rem;
+    height: 4.8rem;
     color: #4338ca; }
+  .feature-card__description {
+    font-size: 1.8rem; }
+  .feature-card:hover {
+    transform: scale(1.03) translateY(-1.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }

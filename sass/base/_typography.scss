@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.7;
   color: $color-gray-dark;
 }
 
@@ -24,4 +24,26 @@ body {
     font-weight: 700;
     animation: moveInRight 1s ease-out;
   }
+}
+
+.heading-secondary {
+  font-size: $heading-secondary-font-size;
+  color: $color-gray-dark;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  color: $color-gray-dark;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: $default-font-size;
+}
+
+.paragraph {
+  font-size: $default-font-size;
 }

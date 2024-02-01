@@ -3,3 +3,23 @@
   background-color: $color-gray-background;
   margin-top: -20vh;
 }
+
+.section-features {
+  padding: 20rem 0;
+
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary, 0.4),
+      rgba($color-secondary, 0.4)
+    ),
+    url('/imgs/festival-1.jpg');
+
+  background-size: cover;
+  background-position: bottom;
+
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  > * {
+    transform: skewY(7deg);
+  }
+}

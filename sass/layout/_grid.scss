@@ -8,6 +8,7 @@
 
   &--cols-3 {
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 6.4rem;
   }
 
   &--cols-4 {

@@ -3,8 +3,9 @@
   width: 75%;
   padding: 6rem;
   padding-left: 9rem;
-  background-color: $color-white;
+  background-color: rgba($color-white, 0.8);
   margin-bottom: 8rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
 
   transform: skewX(-12deg);
 

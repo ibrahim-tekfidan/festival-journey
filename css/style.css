@@ -144,8 +144,8 @@ body {
   background-color: #f7f7f7; }
 
 .section-story {
-  background-color: #f7f7f7;
-  padding: 15rem 0; }
+  padding: 15rem 0;
+  position: relative; }
 
 .header {
   height: 95vh;
@@ -394,8 +394,9 @@ body {
   width: 75%;
   padding: 6rem;
   padding-left: 9rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 8rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   transform: skewX(-12deg); }
   .story__img-box {
     height: 15rem;
@@ -433,3 +434,16 @@ body {
   .story:hover .story__caption {
     transform: translate(-50%, -50%);
     opacity: 1; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6; }
+  .bg-video__content {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }

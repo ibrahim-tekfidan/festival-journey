@@ -37,6 +37,23 @@
       background-color: $color-white;
     }
   }
+  &--gradient {
+    background: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-secondary-light
+    );
+    color: $color-white;
+
+    &::after {
+      background: linear-gradient(
+        to right,
+        $color-primary-light,
+        $color-secondary-light
+      );
+      background-color: $color-white;
+    }
+  }
 
   &::after {
     content: '';

@@ -67,6 +67,7 @@ body {
   color: #555;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 2px;
   background-image: linear-gradient(to right, #be123c, #4338ca);
   -webkit-background-clip: text;
   color: transparent;
@@ -115,6 +116,9 @@ body {
 .u-margin-bottom-xxl {
   margin-bottom: 8rem; }
 
+.u-margin-top-xxl {
+  margin-top: 10rem; }
+
 .section-about {
   padding: 25rem 0;
   background-color: #f7f7f7;
@@ -131,7 +135,7 @@ body {
     transform: skewY(7deg); }
 
 .section-tours {
-  padding: 30rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
   background-color: #f7f7f7; }
 
@@ -201,6 +205,13 @@ body {
   background-color: #fff;
   color: #555; }
   .btn--white::after {
+    background-color: #fff; }
+
+.btn--gradient {
+  background: linear-gradient(to right, #f43f5e, #6366f1);
+  color: #fff; }
+  .btn--gradient::after {
+    background: linear-gradient(to right, #f43f5e, #6366f1);
     background-color: #fff; }
 
 .btn::after {
@@ -333,3 +344,18 @@ body {
       text-align: center; }
       .card__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
+  .card__cta {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    color: #fff;
+    text-transform: uppercase; }
+  .card__text-only {
+    font-size: 1.5rem;
+    text-align: center; }
+  .card__price-value {
+    font-weight: 100;
+    font-size: 6rem; }

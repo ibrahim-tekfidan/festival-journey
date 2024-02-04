@@ -119,6 +119,9 @@ body {
 .u-margin-top-xxl {
   margin-top: 10rem; }
 
+.u-margin-top-md {
+  margin-top: 3rem; }
+
 .section-about {
   padding: 25rem 0;
   background-color: #f7f7f7;
@@ -228,6 +231,27 @@ body {
 
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s backwards; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  background: linear-gradient(to right, #f43f5e, #6366f1);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #be123c;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  -webkit-background-clip: initial;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 .composition {
   position: relative; }

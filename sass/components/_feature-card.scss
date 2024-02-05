@@ -18,4 +18,9 @@
     transform: scale(1.03) translateY(-1.5rem);
     box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
   }
+
+  @include respond(phone) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

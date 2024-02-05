@@ -15,6 +15,10 @@
     border-bottom: 3px solid transparent;
     transition: al 0.2s;
 
+    @include respond(phone) {
+      width: 90%;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
@@ -23,6 +27,6 @@
   }
 
   button {
-    width: 50%;
+    align-self: self-start;
   }
 }

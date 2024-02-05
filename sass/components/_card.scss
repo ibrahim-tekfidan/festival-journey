@@ -100,6 +100,15 @@
     top: 12rem;
     right: 2rem;
     width: 75%;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+      font-weight: initial;
+    }
+    @include respond(tab-port) {
+      font-size: 2.4rem;
+      font-weight: initial;
+    }
   }
 
   &__heading-span {
@@ -169,5 +178,14 @@
   &__price-value {
     font-weight: 100;
     font-size: 6rem;
+  }
+
+  @include respond(tab-port) {
+    width: 60%;
+    margin: 0 auto;
+  }
+  @include respond(phone) {
+    width: 75%;
+    margin: 0 auto;
   }
 }

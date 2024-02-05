@@ -6,6 +6,7 @@
   background-color: rgba($color-white, 0.8);
   margin-bottom: 8rem;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 
   transform: skewX(-12deg);
 
@@ -19,6 +20,16 @@
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+
+    @include respond(tab-port) {
+      transform: skewX(0);
+      height: 12rem;
+      width: 12rem;
+    }
+    @include respond(phone) {
+      height: 10rem;
+      width: 10rem;
+    }
   }
 
   &__img {
@@ -34,6 +45,10 @@
 
   &__text-box {
     transform: skewX(12deg);
+    @include respond(tab-port) {
+      transform: skewX(0);
+      padding: 3rem;
+    }
   }
 
   &__caption {
@@ -58,5 +73,12 @@
   &:hover &__caption {
     transform: translate(-50%, -50%);
     opacity: 1;
+  }
+
+  @include respond(tab-port) {
+    transform: skewX(0);
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 4rem;
   }
 }

@@ -20,4 +20,36 @@
     justify-items: center;
     align-items: center;
   }
+
+  @include respond(tab-land) {
+    &--cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3.2rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    &--cols-2 {
+      grid-template-columns: 1fr;
+      column-gap: 6.4rem;
+      row-gap: 3.2rem;
+    }
+    &--cols-3 {
+      grid-template-columns: 1fr;
+      row-gap: 3.2rem;
+    }
+
+    &--cols-4 {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 6.4rem;
+      row-gap: 3.2rem;
+    }
+  }
+
+  @include respond(phone) {
+    &--cols-4 {
+      grid-template-columns: 1fr;
+      row-gap: 4.8rem;
+    }
+  }
 }

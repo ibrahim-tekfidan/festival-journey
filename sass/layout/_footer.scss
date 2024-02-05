@@ -1,15 +1,33 @@
 .footer {
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-color: #333;
   color: $color-white;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+    gap: 3.2rem;
+  }
+
+  &__logo-box img {
+    width: 15%;
+    @include respond(phone) {
+      width: 25%;
+    }
+  }
 
   &__navigation {
     display: flex;
     justify-content: space-between;
     list-style: none;
 
+    padding-top: 1.5rem;
     border-top: 1px solid $color-gray-light;
-    padding-top: 3rem;
+
+    @include respond(tab-port) {
+      padding-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
     a:link,
     a:visited {
       color: transparent;
@@ -27,7 +45,7 @@
 
   &__paragraph {
     border-top: 1px solid $color-gray-light;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     font-size: $font-size-default;
   }
 }

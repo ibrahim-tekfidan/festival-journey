@@ -1,0 +1,28 @@
+.form {
+  margin-top: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 3px;
+    width: 70%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    border-bottom: 3px solid transparent;
+    transition: al 0.2s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
+      border-bottom: 3px solid $color-primary;
+    }
+  }
+
+  button {
+    width: 50%;
+  }
+}

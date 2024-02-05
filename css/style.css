@@ -122,6 +122,12 @@ body {
 .u-margin-top-md {
   margin-top: 3rem; }
 
+strong {
+  font-size: 2rem;
+  background-image: linear-gradient(to right bottom, #f43f5e, #6366f1);
+  -webkit-background-clip: text;
+  color: transparent; }
+
 .section-about {
   padding: 25rem 0;
   background-color: #f7f7f7;
@@ -177,6 +183,29 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.footer {
+  padding: 15rem 0;
+  background-color: #333;
+  color: #fff; }
+  .footer__navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-top: 1px solid #777;
+    padding-top: 3rem; }
+    .footer__navigation a:link,
+    .footer__navigation a:visited {
+      color: transparent;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-image: linear-gradient(to right bottom, #f43f5e, #6366f1);
+      -webkit-background-clip: text;
+      font-size: 1.6rem; }
+  .footer__paragraph {
+    border-top: 1px solid #777;
+    padding-top: 3rem;
+    font-size: 1.6rem; }
 
 .grid {
   display: grid; }

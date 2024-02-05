@@ -43,3 +43,14 @@
 .u-margin-top-md {
   margin-top: 3rem;
 }
+
+strong {
+  font-size: 2rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-secondary-light
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}

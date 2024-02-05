@@ -1,0 +1,33 @@
+.footer {
+  padding: 15rem 0;
+  background-color: #333;
+  color: $color-white;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    border-top: 1px solid $color-gray-light;
+    padding-top: 3rem;
+    a:link,
+    a:visited {
+      color: transparent;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-secondary-light
+      );
+      -webkit-background-clip: text;
+      font-size: $font-size-default;
+    }
+  }
+
+  &__paragraph {
+    border-top: 1px solid $color-gray-light;
+    padding-top: 3rem;
+    font-size: $font-size-default;
+  }
+}

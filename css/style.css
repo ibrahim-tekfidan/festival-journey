@@ -206,7 +206,7 @@ strong {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right, rgba(190, 18, 60, 0.2), rgba(67, 56, 202, 0.2)), url("../imgs/hero-background.webp");
+  background-image: linear-gradient(to right, rgba(190, 18, 60, 0.1), rgba(67, 56, 202, 0.1)), url("../imgs/hero-background.webp");
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75 vh, 0 100%);
@@ -397,6 +397,11 @@ strong {
           width: 35%;
           top: 2rem;
           left: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .composition__photo--p1 {
+          width: 40%;
+          top: 2rem;
+          left: 0; } }
     .composition__photo--p2 {
       top: 2rem;
       right: 0; }
@@ -405,6 +410,11 @@ strong {
           width: 35%;
           top: 2rem;
           right: 10rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .composition__photo--p2 {
+          width: 40%;
+          top: 2rem;
+          right: 0; } }
     .composition__photo--p3 {
       top: 10rem;
       left: 20%;
@@ -412,6 +422,11 @@ strong {
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
           width: 35%;
+          top: 7rem;
+          left: 30%; } }
+      @media only screen and (max-width: 37.5em) {
+        .composition__photo--p3 {
+          width: 40%;
           top: 10rem;
           left: 30%; } }
     .composition__photo:hover {
